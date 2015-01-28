@@ -1,0 +1,30 @@
+<nav class="nav navbar-default navbar-fixed-top">
+	<div class="container">
+		<ul>
+		  <li><h3>Iron Contacts</h3></li>
+			<%= form_for(@contact) do |f| %>
+
+			 <li><div class="field">
+			    <%= f.label :first_name %><br>
+			    <%= f.text_field :first_name%>
+			  </div></li>
+			  <li><div class="field">
+			    <%= f.label :last_name %><br>
+			    <%= f.text_field :last_name %>
+			  </div></li>
+			  <li><div class="field">
+			    <%= f.label :email %><br>
+			    <%= f.text_field :email %>
+			  </div></li>
+			  <li><div class="field">
+			    <%= f.label :phone_number %><br>
+			    <%= f.text_field :phone_number %>
+			  </div></li>
+		    <li><div class="actions">
+			    <%= f.submit class: 'btn btn-default' %>
+			  </div></li>
+			<% end %>
+
+			</ul>
+		</div>
+</nav>
