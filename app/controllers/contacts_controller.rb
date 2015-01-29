@@ -11,7 +11,6 @@ class ContactsController < ApplicationController
   # GET /contacts/1.json
   def show
   end
-
   # GET /contacts/new
   def new
     @contact = Contact.new
